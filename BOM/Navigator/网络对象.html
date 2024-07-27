@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网络对象</title>
+  </head>
+  <body>
+    <script>
+      // 查看用户当前网络是否在线
+      const ifNet = navigator.onLine;
+      console.log("navigator.onLin", ifNet);
+
+      /*
+        查看当前用户网络状态
+            downlink: 带宽mb/s
+            effectiveType: 网络类型
+            rtt: 数据包从发出到返回的时间ms
+            onchange: 
+            saveData: 
+    */
+      const netInfo = navigator.connection;
+      console.log("navigator.connection", netInfo);
+    </script>
+  </body>
+</html>
